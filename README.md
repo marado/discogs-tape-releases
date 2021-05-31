@@ -15,4 +15,4 @@ $ bash fetch-data.sh YOUR_DISCOGS_API_TOKEN
 
 ## Generating the plot
 
-The part where we turn data.txt into a pretty plot isn't done yet.
+`gnuplot plot.gp` generates `data.png`.

@@ -8,4 +8,5 @@ for y in $(seq 1963 $(($(date +%Y) - 1))); do
 	all=$(node fetch-all-data.js  "$apiToken" "$y")
 	perc=$(echo "scale=10; 100*$cass/$all"|bc)
 	echo "$y	$perc" >> data.txt
+	sleep 1
 done 
